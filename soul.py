@@ -2,8 +2,8 @@ import xtelnet,socket
 from threading import Thread
 from time import sleep
 from random import randint
-timeout=5
-threads=500
+timeout=10
+threads=501
 stop=False
 telnet_results='telnet.txt'
 def create_file(w):
@@ -65,7 +65,7 @@ class iott(Thread):
        t.close()
        break
       except Exception as e:
-       print("\033[91m[-]Failed: "+ip+":"+str(port)+":"+x.split(':')[0]+":"+x.split(':')[1]+" ==>"+str(e))
+       #Tooken off cause of lag :print("\033[91m[-]Failed: "+ip+":"+str(port)+":"+x.split(':')[0]+":"+x.split(':')[1]+" ==>"+str(e))
        if " Authentication Failed" not in str(e):
            break
 def scan():
