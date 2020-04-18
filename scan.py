@@ -3,9 +3,8 @@
 # Enjoy cause its free :v 
 import xtelnet,socket
 from threading import Thread
-from time import sleep #Cause u gon need it btw..
-from random #shit and 
-import randint #shit... ok lets begin
+from time import sleep
+from random  import randint
 timeout=10 # U know bro?
 threads=501 # Cause I am living like larry.. most people have it at 500 >_< but u know.. I'm Brazy.. *STAY DANGEROUS *
 stop=False
